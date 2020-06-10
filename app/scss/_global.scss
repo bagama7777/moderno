@@ -7,6 +7,7 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
 html,
 body {
     height: 100%;
@@ -24,24 +25,30 @@ li {
     padding: 0;
     list-style: none;
 }
+
 body {
     font-family: "Roboto-Regular", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
+
 .content {
     flex: 1 0 auto;
 }
+
 .footer {
     flex: 0 0 auto;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,9 +66,11 @@ body {
         padding: 0 15px;
     }
 }
+
 .page-content {
     background-color: $grey;
 }
+
 .title {
     text-align: center;
     color: $bg;
@@ -84,7 +93,7 @@ body {
         li {
             display: inline-block;
             position: relative;
-            & + li {
+            &+li {
                 padding-left: 24px;
                 &::before {
                     content: "-";
@@ -94,14 +103,27 @@ body {
                 }
             }
             &:last-child {
-                a,span {
+                a,
+                span {
                     color: $bg;
                 }
             }
-
         }
         a {
             color: #b0bec5;
         }
+    }
+}
+
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: '\f105';
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
     }
 }
