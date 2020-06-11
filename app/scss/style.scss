@@ -353,8 +353,6 @@
 }
 // end header
 
-
-
 // start modal
 #modal {
     background-color: $green;
@@ -362,7 +360,6 @@
     width: 100%;
     padding-top: 90px;
     padding-bottom: 100px;
-
 }
 .login__wrapper {
     form {
@@ -374,7 +371,7 @@
             width: 100%;
             &::before {
                 position: absolute;
-                font-family: 'icomoon';
+                font-family: "icomoon";
                 font-size: 14px;
                 color: #fff;
                 left: 18px;
@@ -382,10 +379,10 @@
             }
         }
         .login__label-name::before {
-            content: '\f007';
+            content: "\f007";
         }
         .login__label-pass::before {
-            content: '\f023';
+            content: "\f023";
         }
         input {
             height: 43px;
@@ -400,7 +397,6 @@
             &::placeholder {
                 color: #fff;
                 font-size: 14px;
-                
             }
         }
         button {
@@ -425,8 +421,6 @@
     color: #fff;
     text-transform: uppercase;
     @include f700;
-
-
 }
 .lost-pass {
     display: block;
@@ -444,21 +438,18 @@
     font-size: 18px;
     position: relative;
     &::before {
-        content: '\f044';
+        content: "\f044";
         position: absolute;
         left: 35px;
         top: 15px;
-        font-family: 'icomoon';
+        font-family: "icomoon";
     }
-
 }
 .fancybox-button svg path {
     color: #fff;
 }
 
 // end modal
-
-
 
 // start search
 .search {
@@ -1508,8 +1499,7 @@ button.icon-unsorted {
     background-position: center;
     height: 90px;
 }
-.productmini__info {
-}
+
 .productmini__name {
     @include f500;
     font-size: 14px;
@@ -1700,18 +1690,18 @@ button.icon-unsorted {
 
 // end product-one
 
-
 // start page-404
 
 .page-404__wrapper,
-.about__wrapper {
+.about__wrapper,
+.contact__wrapper {
     border: 1px solid #dcdcdc;
     background-color: #fff;
     margin-bottom: 150px;
-
 }
-.page-404__head, 
-.about__head {
+.page-404__head,
+.about__head,
+.contact__head {
     font-size: 24px;
     color: #444;
     @include f500;
@@ -1724,7 +1714,7 @@ button.icon-unsorted {
     color: #fff;
 }
 .page-404__404 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 800;
     font-size: 300px;
     padding-top: 70px;
@@ -1733,7 +1723,7 @@ button.icon-unsorted {
     position: relative;
     &::after {
         position: absolute;
-        content: '';
+        content: "";
         background-image: url(../images/page-404.png);
         width: 150px;
         height: 292px;
@@ -1762,7 +1752,6 @@ button.icon-unsorted {
     margin-bottom: 100px;
 }
 
-
 // end page-404
 
 // start about
@@ -1785,9 +1774,211 @@ button.icon-unsorted {
 
 // end about
 
+// start contact
 
+.contact__head {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+.contact__inner {
+    padding: 35px 40px 15px;
+}
+.contact__map {
+    margin-bottom: 50px;
+    iframe {
+        width: 100%;
+        height: 415px;
+    }
+}
+.contact__box {
+    display: flex;
+}
+.contact__info {
+    margin-right: 30px;
+    max-width: 330px;
+    width: 100%;
+}
+.contact__info-item {
+    margin-bottom: 30px;
+}
+.contact__info-title {
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 20px;
+    @include f500;
+    color: $bg;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 44px;
+        height: 4px;
+        background-color: $green;
+        left: 40px;
+        bottom: 0;
+    }
+    &::before {
+        color: $green;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+    }
+}
+.contact__info-content {
+    padding-left: 40px;
+    color: #707070;
+    max-width: 230px;
+}
+.contact__form-title {
+    font-size: 24px;
+    @include f500;
+    margin-bottom: 25px;
+    color: #333;
+}
+.contact__form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.contact__form {
+    width: 100%;
+    input {
+        border: none;
+        height: 44px;
+        padding-left: 17px;
+        padding-right: 17px;
+        background-color: #f1f4f5;
+        width: 350px;
+        margin-bottom: 30px;
+        &::placeholder {
+            font-size: 15px;
+            color: #7a7a7a;
+        }
+    }
+    textarea {
+        border: none;
+        padding: 13px 17px;
+        height: 190px;
+        background-color: #f1f4f5;
+        width: 100%;
+        display: block;
+        resize: none;
+        margin-bottom: 23px;
+        &::placeholder {
+            font-size: 15px;
+            color: #7a7a7a;
+        }
+    }
+    button {
+        border: none;
+        background-color: $green;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        @include f700;
+        padding: 20px 5px;
+        width: 190px;
+    }
+}
 
+// end contact
 
+// start settings
+
+.settings {
+    padding-bottom: 100px;
+}
+
+.product-one__tabs.settings__tabs {
+    display: flex;
+    .tabs {
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        text-align-last: left;
+        display: block;
+        height: 100%;
+        span {
+            display: block;
+            background-color: #fff;
+            border-bottom: 1px solid #dedede;
+            padding: 17px 17px 17px 50px;
+            color: #707070;
+            font-size: 14px;
+            @include f500;
+            &.active {
+                border-bottom: 1px solid $green;
+                color: #37474f;
+                &::before {
+                    color: $green;
+                }
+            }
+            &::before {
+                left: 24px;
+                color: #444;
+            }
+        }
+    }
+    .tabs .tab + .tab {
+        border-left: none;
+    }
+    .tab__content {
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+.page-box {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    min-height: 100px;
+}
+
+.page-box__title {
+    border-bottom: 1px solid #dedede;
+    padding: 18px 34px;
+    @include f500;
+    font-size: 24px;
+    color: $bg;
+}
+
+.page-box__content {
+    padding: 30px 35px 80px;
+}
+.settings__line {
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    label {
+        width: 260px;
+        color: #444;
+    }
+    input {
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        background-color: #f9f9f9;
+        color: #000;
+        border: 1px solid #dedede;
+        padding: 0 10px;
+    }
+    select {
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        background-color: #f9f9f9;
+        color: #000;
+        border: 1px solid #dedede;
+        padding: 0 10px;
+        color: #707070;
+    }
+}
+
+// end settings
 
 @import "media";
